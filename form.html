@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        fieldset {
+            background-color: rgb(218, 213, 213)
+        }
+
+        label {
+            display: inline-block;
+            width: 246px;
+        }
+
+        input {
+            width: 274px;
+            height: 25px;
+        }
+
+        select {
+            width: 284px;
+        }
+
+        .radio {
+            display: inline-block;
+            width: 63px;
+        }
+
+        .button {
+            height: 33px;
+            width: 242px;
+            margin: 11px;
+        }
+
+        .text {
+            float: right;
+            position: relative;
+            right: 100px;
+            bottom: 22px;
+            font-size: 11px;
+        }
+
+        .tooltip {
+            background-color: rgb(128, 128, 199);
+            width: 20px;
+            height: 20px;
+            border-radius: 25px;
+            text-align: center;
+
+        }
+
+        /* .message_shown{
+            visibility: hidden;
+            width: 20px;
+
+        } */
+        #toolid{
+            position: relative;
+            top: 37px;
+
+        }
+        .tooltip1 {
+            position: relative;
+            top: 10px;
+        }
+
+        .message_shown {
+            visibility: hidden;
+            position: relative;
+            bottom: 50px;
+        }
+
+        .tooltip:hover .message_shown {
+            visibility: visible;
+            background-color: rgb(194, 194, 214);
+            position: relative;
+            /* bottom: 100px; */
+
+        }
+    </style>
+</head>
+
+<body style="margin-left: 300px; margin-right:300px;">
+    <div class="column" width="40">
+        <form action="/action_page.php" width="40%">
+            <fieldset style="width:600px">
+                <!-- <legend> -->
+                <h2>Personal Information</h2>
+                <!-- </legend> -->
+                <div>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                    <label class="tooltip tooltip1" id="toolid"><span>?</span> <span class="message_shown">Required
+                            field</span></label>
+                    <br><br>
+                    <label for="Gender">Gender:</label>
+                    <label for="Male1" class="radio">Male</label>
+                    <input type="radio" class="radio" id="Male1" name="Gender">
+                    <label for="Female1" class="radio">Female</label>
+                    <input type="radio" class="radio" id="Female1" name="Gender">
+                    <label class="tooltip tooltip1"><span> ?</span> <span class="message_shown">Required
+                            field</span></label>
+                </div>
+                <!-- </fieldset> -->
+                <!-- <fieldset> -->
+                <div>
+                    <legend>
+                        <h2>Account Information</h2>
+                    </legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required> <br><br>
+                    <label class="text">(your email address will be your username)</label><br>
+                    <label for="retypeemail">Retype email:</label>
+                    <input type="email" id="rtemail" name="email" required> <br><br>
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="pwd" minlength="8" required><br><br>
+                    <label class="text">(Min 8 character, 1 number, case sensitive)</label><br>
+                    <label for="pwd">Retype Password:</label>
+                    <input type="password" id="repwd" name="pwd" minlength="8" required><br><br>
+                    <label for="security_que">Security Question:</label>
+
+                    <select name="security_que" id="security_que" reqired>
+                        <option>Select a security question</option>
+                        <option value="pet">what is your pet name</option>
+                        <option value="place">where are you from</option>
+                        <option value="sport">what is your faviourte sport</option>
+                    </select>
+                    <label class="tooltip tooltip1"><span> ?</span><span class="message_shown">Required
+                            field</span></label><br><br>
+                    <label for="security_ans">Security Answer:</label>
+                    <input type="text" id="security_ans" name="security_ans" required><br><br>
+                </div>
+                <!-- </fieldset> -->
+                <div>
+                    <!-- <fieldset> -->
+                    <legend>
+                        <h2>Contact Information</h2>
+                    </legend>
+                    <label for="address">Address:</label>
+                    <input type="text" id="addrclass=" name="address" required> <br><br>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required> <br><br>
+                    <label for="state">State:</label>
+                    <select name="state" id="state" required>
+                        <option>Choose a states</option>
+                        <option value="pb">Punjab</option>
+                        <option value="hr">Harayan</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    <label for="pin_code">Zip Code:</label>
+                    <input type="number" id=pin_code" name="zip_code" minlength="6" maxlength="6"><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label class="tooltip tooltip1"><span>?</span><span class="message_shown">Required
+                            field</span></label>
+                </div>
+
+                <input type="reset" value="Reset" class="button">
+                <input type="submit" value="Submit" class="button">
+            </fieldset>
+        </form>
+    </div>
+    </table>
+</body>
+
+</html>
