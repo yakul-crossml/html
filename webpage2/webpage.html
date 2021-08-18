@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .nav_icons {
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+            color: rgb(41, 33, 33);
+        }
+
+        .navbar ul li {
+            display: inline-block;
+
+        }
+
+        .navbar div {
+            display: inline-block;
+        }
+
+        .left_logo {
+            float: left;
+            display: inline-block;
+            /* background-color: cyan; */
+            width: 17%;
+            position: absolute;
+            left: 86px;
+            top: 21px;
+        }
+
+        .nav_mid {
+            /* background-color: burlywood; */
+            display: block;
+            width: 76%;
+
+        }
+
+        .nav_right {
+            float: right;
+            /* background-color: darkgray; */
+            width: 17%;
+            position: absolute;
+            top: 13px;
+            right: 58px;
+        }
+
+        .button {
+            width: 130px;
+            height: 32px;
+            margin-top: 10px;
+            background-color: greenyellow;
+            border-radius: 5px;
+        }
+
+        .home {
+            width: 100%;
+            height: 560px;
+            background-image: url("images/head.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .home div {
+            background-color: white;
+            position: relative;
+            top: 132px;
+            width: 684px;
+            height: 334px;
+            left: 275px;
+        }
+
+        .home div b {
+            position: relative;
+            left: 81px;
+            top: 51px;
+            font-size: 32px;
+        }
+
+        .home div p {
+            padding: 47px;
+            color: gainsboro;
+        }
+
+        .home div button {
+            background-color: yellow;
+            color: black;
+            margin-left: 273px;
+            height: 40px;
+            width: 123px;
+            border-radius: 4px;
+        }
+
+        .feature hr {
+            width: 1186px;
+            position: relative;
+            bottom: 41px;
+            float: right;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .yellow .heading {
+            width: 627px;
+            padding-left: 55px;
+            padding-top: 16px;
+        }
+
+        .yellow .paragraph {
+            display: inline-block;
+            position: relative;
+            left: 51px;
+            bottom: 16px;
+        }
+
+        .yellow button {
+            background-color: blueviolet;
+            width: 141px;
+            height: 50px;
+            border-radius: 8px;
+            position: relative;
+            left: 47px;
+            bottom: 4px;
+        }
+
+        .yellow i {
+            width: 34px;
+            height: 29px;
+        }
+
+        .yellow .icons {
+            display: inline-block;
+            position: relative;
+            left: 950px;
+            bottom: 110px;
+        }
+
+        .yellow .connect {
+            display: inline-block;
+            position: relative;
+            left: 1092px;
+            bottom: 140px;
+        }
+
+        .foot {
+            background-color: rgb(20, 20, 65);
+        }
+
+        .footer_list {
+            display: inline-block;
+            width: 350px;
+            position: relative;
+            bottom: 63px;
+            left: 170px;
+            color: white;
+        }
+
+        .footer_logo {
+            display: inline-block;
+            width: 350px;
+            position: relative;
+            bottom: -28px;
+            left: 36px;
+        }
+
+        footer div li {
+            list-style-type: none;
+        }
+
+        footer .heading {
+            position: relative;
+            left: 37px;
+        }
+        .left_sec {
+            width: 25%;
+            height: 900px;
+            float: left;
+        }
+
+        .right_sec {
+            width: 69%;
+            float: right;
+        }
+
+        .right_sec img {
+            width: 377px;
+        }
+
+        .right_sec .img2 {
+            position: relative;
+            bottom: 356px;
+            left: 457px;
+        }
+
+        .right_sec .text_sec1 {
+            width: 353px;
+        }
+
+        .right_sec .left_icons {
+            display: inline-block;
+            position: relative;
+            bottom: 189px;
+        }
+
+        .right_sec i {
+            font-size: 39px;
+        }
+
+        .right_sec .left_sal {
+            display: inline-block;
+            position: relative;
+            bottom: 208px;
+            font-size: 22px;
+            left: 8px;
+        }
+
+        .right_sec .left_date {
+            display: inline-block;
+            position: relative;
+            bottom: 189px;
+            font-size: 13px;
+            right: 23px;
+        }
+
+        .right_sec .link {
+            display: inline-block;
+            position: relative;
+            bottom: 186px;
+            left: 173px;
+        }
+
+        .right_sec .img5 {
+            position: relative;
+            bottom: 191px;
+        }
+
+        #img4 {
+            position: relative;
+            left: 83px;
+        }
+
+        .right_sec .text_sec3 {
+            display: inline-block;
+            position: relative;
+            bottom: 187px;
+            width: 353px;
+        }
+
+        .right_sec .text_sec2 {
+            display: inline-block;
+            position: relative;
+            bottom: 647px;
+            width: 353px;
+            left: 101px;
+        }
+
+        /* .right_sec .right_icons {
+            position: relative;
+            display: inline-block;
+            bottom: 530px;
+            left: 466px;
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <div class="left_logo">
+                <img src="images/logo.png" alt="Loading..." class="logo">
+            </div>
+            <div class="nav_mid">
+                <ul style="list-style-type: none; text-align: right;">
+                    <li><a href="#" class="nav_icons">HOME</a></li>
+                    <li><a href="#" class="nav_icons">POST</a></li>
+                    <li><a href="#" class="nav_icons">CATEGORY</a></li>
+                    <li><a href="#" class="nav_icons">ABOUT</a></li>
+                    <li><a href="#" class="nav_iconsbackground-color: cadetblue;
+                    width: 28%;
+                    float: left;">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav_right">
+                <button class="button">DOWNLOAD</button>
+            </div>
+        </nav>
+
+        <i class="fas fa-link"></i>
+    </header>
+
+
+    <!-- home page -->
+    <div class="home">
+        <div>
+            <b style="">Affiliates Bootstrap Template</b><br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis dolores porro quod et unde
+                doloribus. Maxime autem deserunt adipisci eligendi.</p>
+            <button>Download</button>
+        </div>
+    </div>
+    <div style="height: 62px;" class="feature">
+        <h6 class="featured">FEATURED</h6>
+        <hr>
+    </div>
+    <!-- </div> -->
+
+
+
+
+
+
+<div style="height: 950px;">
+    <fieldset class="left_sec">
+        <div class="sec3">
+            <div class="s3left">
+                <fieldset>
+                    <div>
+                        <hr style="width: 24%;
+                        float: left;"> NEWSLETTER
+                        <hr style="width: 30%;
+                        float: right;">
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="E-mail Address" style="position: relative;
+                        height: 27px;
+                        left: 12px;">
+                    </div>
+                    <div style="display: inline-block;
+                    position: relative;
+                    height: 62px;
+                    width: 180px;
+                    left: 26px;
+                    top: 10px;">
+                        <button style="display: inline-block;
+                        position: relative;
+                        height: 37px;
+                        width: 180px;
+                        left: 0px;
+                        top: 10px;
+                        background-color: #9494b5;
+                        color: white;
+                        border-radius: 12px;">Subscribe</button>
+                    </div>
+                </fieldset>
+
+            </div>
+
+
+            <div style="    position: relative;
+            top: 53px;
+        }">
+                <fieldset>
+                    <hr style="width: 32%;
+                    float: left;">USEFUL
+                    <hr style="width: 38%;
+float: right;">
+                    <div>
+                        <ul>
+                            <li>Digital Ocean</li>
+                            <hr>
+                            <li>Cloudways</li>
+                            <hr>
+                            <li>Page Speed Test</li>
+                            <hr>
+                            <li>Elementor Page Builder</li>
+                            <hr>
+                            <li>Our Freebies</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </div>
+            <div style="    position: relative;
+            top: 112px;">
+                <fieldset>
+                    <div>
+                        <hr style="width: 22%;
+                        float: left;"> RECOMMENDED
+                        <hr style="width: 25%;
+float: right;">
+                    </div>
+                    <div>
+                        <img src="images/ad.png" alt="" style="width: 284px;">
+                    </div>
+                </fieldset>
+            </div>
+    </fieldset>
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+    <fieldset class="right_sec">
+
+        <div class="s3right">
+
+            <div class="s3rl1">
+
+            </div>
+            <div class="s3rr1" style="height: 900px;">
+                <div>
+                    <img src="images/2.jpg" alt="" class="img1">
+                </div>
+
+
+
+                <!-- 1 -->
+                <div class="text_sec1">
+                    <h4>Tree of Codes</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptates ut temporibus alias odio
+                        inventore molestias neque! Sed, ipsa dolorem.</p>
+                </div>
+                <div class="img2">
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="left_icons">
+                    <i class="fa fa-user-circle"></i>
+                </div>
+                <div class="left_sal">
+                    <h6>Sal</h6>
+                </div>
+                <div class="left_date">
+                    21 jun 2021
+                </div>
+                <div class="link">
+                    <i class="fa fa-link"></i>
+                </div>
+
+                <div class="img5">
+                    <img src="images/5.jpg" alt="">
+                    <img src="images/6.jpg" alt="" id="img4">
+                </div>
+
+                <!-- 2 -->
+                <div class="text_sec3">
+                    <h4>Tree of Codes</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptates ut temporibus alias odio
+                        inventore molestias neque! Sed, ipsa dolorem.</p>
+                </div>
+                
+
+
+
+
+
+                <div class="text_sec2">
+                    <h4>Tree of Codes</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptates ut temporibus alias odio
+                        inventore molestias neque! Sed, ipsa dolorem.</p>
+                </div>
+                <!-- <div class="right_icons">
+                    <div class="left_icons">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="left_sal">
+                        <h6>Sal</h6>
+                    </div>
+                    <div class="left_date">
+                        21 jun 2021
+                    </div>
+                    <div class="link">
+                        <i class="fa fa-link"></i>
+                    </div>
+
+                </div>
+ -->
+
+
+
+
+
+
+<!-- 3 -->
+ <div class="text_sec2" style="position: relative;
+ left: 469px;
+ bottom: 338px;">
+    <h4>Tree of Codes</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex voluptates ut temporibus alias odio
+        inventore molestias neque! Sed, ipsa dolorem.</p>
+</div>
+
+                <div style="width: 0px; height: 0px">
+                    <i class="fa fa-user-circle" style="position: relative;
+            bottom: 777px;
+            left: 461px;"></i>
+                    <h6 style="position: relative;
+            bottom: 852px;
+            font-size: 15px;
+            left: 514px;">Sal</h6>
+                    <div style="display: inline-block;
+                    font-size: 14px;
+                    bottom: 886px;
+                    position: relative;
+                    left: 514px;
+                    width: 105px;">
+                        21 jun 2021
+                    </div>
+                    <i class="fa fa-link" style="position: relative;
+                    bottom: 924px;
+                    left: 783px;"></i>
+
+
+                </div>
+
+
+
+<!-- 4 -->
+
+
+                <div style="width:0px; height: 0px">
+                    <div class="left_icons">
+                        <i class="fa fa-user-circle" style="position: relative; bottom: 161px;"></i>
+                    </div>
+                    <div class="left_sal">
+                        <h6 style="position: relative;
+                        bottom: 215px;
+                        left: 36px;">Sal</h6>
+                    </div>
+                    <div class="left_date" style="position: relative;
+                    bottom: 455px;
+                    width: 90px;
+                    left: 43px;">
+                        21 jun 2021
+                    </div>
+                    <div class="link">
+                        <i class="fa fa-link" style="
+                            position: relative;
+                            bottom: 309px;
+                            left: 124px;
+        "></i>
+                    </div>
+                </div>
+
+
+
+
+<!-- 5 -->
+
+                <div>
+                    <div class="left_icons" style="position: relative;
+                    bottom: 446px;
+                    left: 477px;">
+                        <i class="fa fa-user-circle" style="position: relative;
+                        top: 84px;"></i>
+                    </div>
+                    <div class="left_sal">
+                        <h6 style="position: relative;
+                        bottom: 173px;
+                        left: 471px;">Sal</h6>
+                    </div>
+                    <div class="left_date" style="position: relative;
+                    bottom: 363px;
+                    left: 449px;">
+                        21 jun 2021
+                    </div>
+                    <div class="link" ></div>
+                        <i class="fa fa-link" style="    position: relative;
+                        bottom: 359px;
+                        left: 630px;
+                    ss"></i>
+                    </div>
+                </div>
+    </fieldset>
+</div>
+
+    <div class="yellow">
+        <div class="heading">
+            <h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae aperiam eveniet maiores
+                necessitatibus.
+            </h4>
+        </div>
+        <div class="paragraph">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div>
+            <button class="button">Join us yesterday</button>
+        </div>
+        <div class="connect">
+            <h4>Connect with us</h4>
+        </div>
+        <div class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-google"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="foot">
+            <div class="footer_logo">
+                <img src="images/logo-footer.png" alt="">
+            </div>
+            <div>
+                <div class="footer_list">
+                    <h3 class="heading">Resources</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Contact us</li>
+                        <li>About us</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="footer_list">
+                    <h3 class="heading">Author</h3>
+                    <ul>
+                        <li>Affilates</li>
+                        <li>Lisence</li>
+                        <li>Blog</li>
+                        <li>contact</li>
+                    </ul>
+                </div>
+                <div class="footer_list">
+                    <h3>Download</h3>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab fugit soluta architecto quidem
+                        distinctio
+                        ipsa
+                        nobis magnam modi aliquam veritatis?</P>
+                </div>
+            </div>
+    </footer>
+
+</body>
+
+</html>
